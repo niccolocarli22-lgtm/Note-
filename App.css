@@ -1,0 +1,90 @@
+.App {
+    min-height: 100vh;
+}
+
+/* Sheet Music Canvas Styling */
+.vf-stave {
+    fill: currentColor;
+}
+
+.vf-stave .vf-stave-section-rect {
+    fill: transparent;
+}
+
+/* Recording Animation */
+@keyframes recording-pulse {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(225, 29, 72, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 0 10px rgba(225, 29, 72, 0);
+    }
+}
+
+.recording-pulse {
+    animation: recording-pulse 2s ease-in-out infinite;
+}
+
+/* Page Transitions */
+.page-enter {
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+.page-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms ease-out, transform 300ms ease-out;
+}
+
+.page-exit {
+    opacity: 1;
+}
+
+.page-exit-active {
+    opacity: 0;
+    transition: opacity 200ms ease-in;
+}
+
+/* Gold accent animations */
+@keyframes gold-shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+.gold-shimmer {
+    background: linear-gradient(
+        90deg,
+        #D4AF37 0%,
+        #F4D47C 25%,
+        #D4AF37 50%,
+        #F4D47C 75%,
+        #D4AF37 100%
+    );
+    background-size: 200% auto;
+    animation: gold-shimmer 3s linear infinite;
+}
+
+/* Staff notation overrides */
+.vf-stavenote .vf-notehead path {
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+.vf-beam path {
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+.vf-stave path {
+    stroke: currentColor;
+}
+
+/* Custom cursor for interactive elements */
+.cursor-music {
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23D4AF37' stroke-width='2'%3E%3Cpath d='M9 18V5l12-2v13'/%3E%3Ccircle cx='6' cy='18' r='3'/%3E%3Ccircle cx='18' cy='16' r='3'/%3E%3C/svg%3E") 12 12, pointer;
+}
