@@ -1,0 +1,150 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "SonataFlow",
+      "archetype": "The Modern Maestro",
+      "core_values": ["Precision", "Elegance", "Acoustic Warmth", "Digital Clarity"],
+      "vibe": "A Steinway piano in a modern minimalist loft. Classic soul, cutting-edge tech."
+    },
+    "typography": {
+      "font_family": {
+        "headings": "Playfair Display, serif",
+        "body": "Manrope, sans-serif",
+        "mono": "JetBrains Mono, monospace"
+      },
+      "usage_rules": {
+        "headings": "Use Playfair Display for all H1-H3. Italicize key words for emphasis (e.g., 'Start *Recording*').",
+        "body": "Manrope for all UI elements, settings, and instructions. High legibility is key.",
+        "data": "Use JetBrains Mono for timecodes, frequency values, and MIDI data."
+      },
+      "scale": {
+        "h1": "text-4xl md:text-6xl font-medium tracking-tight",
+        "h2": "text-3xl md:text-4xl font-normal",
+        "h3": "text-2xl font-medium",
+        "body_lg": "text-lg leading-relaxed",
+        "body_base": "text-base leading-normal",
+        "caption": "text-sm text-muted-foreground uppercase tracking-widest"
+      }
+    },
+    "colors": {
+      "palette": {
+        "light": {
+          "background": "#FDFBF7",
+          "foreground": "#1A1A1A",
+          "card": "#FFFFFF",
+          "card_foreground": "#1A1A1A",
+          "primary": "#1A1A1A",
+          "primary_foreground": "#FDFBF7",
+          "accent": "#D4AF37",
+          "accent_foreground": "#FFFFFF",
+          "muted": "#F2F0E9",
+          "border": "#E6E4DC"
+        },
+        "dark": {
+          "background": "#0A0A0A",
+          "foreground": "#EDEDED",
+          "card": "#121212",
+          "card_foreground": "#EDEDED",
+          "primary": "#EDEDED",
+          "primary_foreground": "#0A0A0A",
+          "accent": "#D4AF37",
+          "accent_foreground": "#000000",
+          "muted": "#1F1F1F",
+          "border": "#2A2A2A"
+        }
+      },
+      "functional": {
+        "recording": "#E11D48",
+        "success": "#10B981",
+        "warning": "#F59E0B"
+      },
+      "gradients": {
+        "gold_glow": "linear-gradient(135deg, #D4AF37 0%, #AA8A25 100%)",
+        "subtle_fade": "linear-gradient(to bottom, transparent, var(--background))"
+      }
+    },
+    "layout": {
+      "spacing": {
+        "container_padding": "p-6 md:p-12 lg:p-16",
+        "section_gap": "gap-12 md:gap-24",
+        "element_gap": "gap-4 md:gap-8"
+      },
+      "grids": {
+        "dashboard": "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6",
+        "transcriber": "flex flex-col h-screen overflow-hidden"
+      },
+      "border_radius": {
+        "default": "rounded-xl",
+        "card": "rounded-2xl",
+        "button": "rounded-full"
+      }
+    },
+    "components": {
+      "buttons": {
+        "primary": "bg-primary text-primary-foreground hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl active:scale-95",
+        "secondary": "bg-muted text-foreground hover:bg-muted/80 transition-all duration-200",
+        "ghost": "hover:bg-accent/10 hover:text-accent transition-colors",
+        "record": "bg-red-600 text-white hover:bg-red-700 shadow-[0_0_20px_rgba(225,29,72,0.4)] animate-pulse-slow"
+      },
+      "cards": {
+        "style": "bg-card border border-border/50 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1",
+        "glass": "bg-background/60 backdrop-blur-xl border border-white/10 shadow-xl"
+      },
+      "inputs": {
+        "style": "bg-transparent border-b-2 border-border focus:border-accent outline-none transition-colors px-0 py-2 rounded-none"
+      }
+    },
+    "visual_enhancers": {
+      "shadows": {
+        "soft": "0 4px 20px -2px rgba(0, 0, 0, 0.05)",
+        "glow": "0 0 20px rgba(212, 175, 55, 0.3)"
+      },
+      "textures": {
+        "noise": "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E\")"
+      },
+      "animations": {
+        "hover_lift": "transition-transform duration-300 hover:-translate-y-1",
+        "fade_in": "animate-in fade-in duration-500",
+        "slide_up": "animate-in slide-in-from-bottom-4 duration-500"
+      }
+    },
+    "assets": {
+      "images": [
+        {
+          "category": "hero_background",
+          "url": "https://images.unsplash.com/photo-1551084219-d8cab9d7f776?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3MjQyMTd8MHwxfHNlYXJjaHwyfHxtdXNpY2lhbiUyMHBsYXlpbmclMjBwaWFubyUyMGF0bW9zcGhlcmljfGVufDB8fHx8MTc3MzM0OTA3NXww&ixlib=rb-4.1.0&q=85",
+          "description": "Moody, atmospheric shadow play of a musician - use for Landing Page Hero or Auth screens."
+        },
+        {
+          "category": "texture_detail",
+          "url": "https://images.unsplash.com/photo-1772991273977-048a0e900301?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODF8MHwxfHNlYXJjaHwyfHxncmFuZCUyMHBpYW5vJTIwa2V5cyUyMGNsb3NlJTIwdXAlMjBlbGVnYW50fGVufDB8fHx8MTc3MzM0OTA3MXww&ixlib=rb-4.1.0&q=85",
+          "description": "Close up of piano keys - use for 'About' section or empty states in History."
+        }
+      ],
+      "icons": "Use 'lucide-react' for all UI icons. Use thin stroke weights (1.5px) to match the elegant aesthetic."
+    }
+  },
+  "implementation_guide": {
+    "pages": {
+      "landing": {
+        "strategy": "Immersive, emotional. Use the 'hero_background' image with a heavy gradient overlay. Large Playfair Display typography. 'Start Transcribing' CTA should be the 'gold_glow' gradient.",
+        "components": ["HeroSection", "FeatureGrid (Bento)", "Testimonials"]
+      },
+      "transcriber": {
+        "strategy": "Distraction-free. Top bar: Minimal controls. Center: VexFlow canvas (white bg in light mode, inverted in dark mode). Bottom: Audio visualizer (canvas) + Recording controls.",
+        "components": ["AudioVisualizer", "SheetMusicCanvas", "ControlBar"]
+      },
+      "dashboard": {
+        "strategy": "Clean, data-rich but airy. Use the 'Bento' grid layout for saved songs. Each card shows a mini-preview of the sheet music (SVG) and date.",
+        "components": ["HistoryGrid", "StatsCard", "SearchBar"]
+      }
+    },
+    "universal_rules": [
+      "NEVER use default scrollbars. Use 'tailwind-scrollbar-hide' or custom thin styling.",
+      "Dark mode is NOT just black. It is #0A0A0A. Light mode is #FDFBF7 (Cream).",
+      "All interactive elements must have a 'data-testid'.",
+      "Use 'sonner' for notifications (e.g., 'Transcription Saved').",
+      "Ensure VexFlow canvas background adapts to the theme (White for Light, Dark Grey for Dark) for contrast."
+    ]
+  }
+}
